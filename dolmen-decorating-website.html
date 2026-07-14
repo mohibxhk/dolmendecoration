@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dolmen Decorating — Professional Painter &amp; Decorator | Ireland</title>
+<meta name="description" content="Dolmen Decorating — 5-star professional painting & decorating by Martin. Interior & exterior painting, wallpapering, specialist finishes across Ireland. Free quotes." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#6a2c5a; --plum-d:#4e2043; --plum-dd:#341429; --mauve:#a05589;
+  --gold:#d99a3e; --gold-d:#bd7f2b; --blush:#f7e6d8;
+  --cream:#faf6f1; --cream-2:#f2e9e0;
+  --ink:#2c1a27; --muted:#7a6570; --line:rgba(78,32,67,.14);
+  --white:#fff; --shadow:0 22px 52px -22px rgba(52,20,41,.42); --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.disp{font-family:'Playfair Display',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:15px;padding:14px 27px;border-radius:8px;border:0;cursor:pointer;transition:.25s;font-family:'Outfit',sans-serif}
+.btn-primary{background:linear-gradient(135deg,var(--plum),var(--plum-d));color:#fff;box-shadow:0 14px 26px -12px rgba(106,44,90,.7)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 34px -12px rgba(106,44,90,.85)}
+.btn-ghost{background:rgba(255,255,255,.85);color:var(--plum-d);border:1.5px solid var(--line)}
+.btn-ghost:hover{background:#fff;transform:translateY(-3px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-d));color:#3a2405;box-shadow:0 14px 26px -12px rgba(217,154,62,.6)}
+.btn-gold:hover{transform:translateY(-3px)}
+
+header{position:sticky;top:0;z-index:60;backdrop-filter:blur(14px);background:rgba(250,246,241,.82);border-bottom:1px solid transparent;transition:.3s}
+header.scrolled{border-bottom:1px solid var(--line);background:rgba(250,246,241,.96)}
+nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:11px;font-family:'Playfair Display';font-weight:700;font-size:22px;color:var(--plum-dd)}
+.logo .mark{width:44px;height:44px;border-radius:11px;background:linear-gradient(135deg,var(--plum),var(--mauve));display:grid;place-items:center;box-shadow:0 8px 18px -6px rgba(106,44,90,.6)}
+.logo small{display:block;font-family:'Outfit';font-size:9px;letter-spacing:.24em;color:var(--gold-d);font-weight:800;text-transform:uppercase;margin-top:-2px}
+.navlinks{display:flex;align-items:center;gap:30px}
+.navlinks a{font-weight:600;font-size:15px;color:var(--ink);opacity:.82;transition:.2s}
+.navlinks a:hover{opacity:1;color:var(--plum)}
+.nav-cta{display:flex;gap:12px;align-items:center}
+.menu-btn{display:none;background:none;border:0;cursor:pointer}
+@media(max-width:900px){.navlinks{display:none}.menu-btn{display:block}}
+
+.hero{position:relative;padding:66px 0 88px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:
+  radial-gradient(56% 56% at 84% 10%,rgba(160,85,137,.24),transparent 62%),
+  radial-gradient(46% 46% at 8% 40%,rgba(217,154,62,.16),transparent 60%)}
+.blob{position:absolute;z-index:-1;border-radius:46% 54% 60% 40%/50% 46% 54% 50%;opacity:.5;animation:morph 9s ease-in-out infinite}
+@keyframes morph{0%,100%{transform:translateY(0) rotate(0);border-radius:46% 54% 60% 40%/50% 46% 54% 50%}50%{transform:translateY(-22px) rotate(10deg);border-radius:60% 40% 45% 55%/45% 55% 45% 55%}}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:36px}}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);padding:8px 15px;border-radius:999px;font-weight:700;font-size:13px;color:var(--plum);box-shadow:var(--shadow);margin-bottom:22px}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2)}
+h1{font-size:clamp(42px,6.4vw,66px);color:var(--plum-dd)}
+h1 em{font-style:italic;color:var(--gold-d)}
+.hero p.lead{font-size:19px;color:var(--muted);margin:20px 0 26px;max-width:520px}
+.swatch{display:flex;gap:0;border-radius:10px;overflow:hidden;box-shadow:var(--shadow);width:fit-content;margin-bottom:28px}
+.swatch span{width:42px;height:30px;display:block}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{display:flex;gap:32px;margin-top:38px;flex-wrap:wrap}
+.hero-stats .n{font-family:'Playfair Display';font-size:34px;color:var(--plum-dd)}
+.hero-stats .l{font-size:13px;color:var(--muted);font-weight:600}
+.stars{color:var(--gold);letter-spacing:2px}
+
+.hero-card{background:#fff;border-radius:20px;padding:11px;box-shadow:var(--shadow);position:relative;transform:rotate(1.4deg);transition:.4s}
+.hero-card:hover{transform:rotate(0)}
+.hero-card .photo{height:325px;border-radius:14px;background:linear-gradient(150deg,var(--plum-dd),var(--plum) 55%,var(--mauve));position:relative;overflow:hidden;display:grid;place-items:center}
+.hero-card .photo .cta-emoji{font-size:82px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.28))}
+.hero-card .photo .stroke{position:absolute;bottom:0;left:0;width:100%;height:38%;background:linear-gradient(transparent,var(--gold));opacity:.5}
+.hero-card .cap{display:flex;align-items:center;justify-content:space-between;padding:16px 12px 8px}
+.hero-card .cap .who{font-weight:800}
+.hero-card .cap .rev{font-size:13px;color:var(--muted)}
+.badge-float{position:absolute;background:#fff;border-radius:12px;padding:12px 15px;box-shadow:var(--shadow);font-weight:700;font-size:13px;display:flex;align-items:center;gap:9px}
+.badge-float.b1{bottom:-18px;left:-18px;color:var(--plum)}
+.badge-float.b2{top:20px;right:-16px;color:var(--gold-d)}
+.badge-float .ic{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;background:var(--blush)}
+
+.trust{background:var(--plum-dd);color:#f2dcec;padding:16px 0;overflow:hidden;white-space:nowrap}
+.trust-track{display:inline-flex;gap:48px;animation:marq 24s linear infinite;font-weight:700;font-size:14px}
+.trust-track span{opacity:.9;display:inline-flex;gap:10px;align-items:center}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+section{padding:90px 0}
+.sec-head{text-align:center;max-width:660px;margin:0 auto 54px}
+.sec-head .kick{color:var(--gold-d);font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:12px}
+.sec-head h2{font-size:clamp(34px,4.8vw,50px);color:var(--plum-dd);margin:10px 0}
+.sec-head p{color:var(--muted);font-size:17px}
+
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.svc-grid{grid-template-columns:1fr}}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:.3s;position:relative;overflow:hidden}
+.svc:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:var(--mauve)}
+.svc .ic{width:58px;height:58px;border-radius:14px;background:linear-gradient(135deg,var(--blush),#fff);display:grid;place-items:center;margin-bottom:18px;font-size:26px;border:1px solid var(--line)}
+.svc h3{font-size:23px;color:var(--plum-dd);margin-bottom:8px}
+.svc p{color:var(--muted);font-size:15px;margin-bottom:14px}
+.svc .price{font-weight:800;color:var(--plum);font-size:14px}
+.svc .price small{color:var(--muted);font-weight:600}
+.svc .tag{position:absolute;top:18px;right:18px;background:var(--gold);color:#3a2405;font-size:10px;font-weight:800;letter-spacing:.06em;padding:5px 10px;border-radius:6px;text-transform:uppercase}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media(max-width:900px){.about{grid-template-columns:1fr}}
+.about-visual{background:linear-gradient(150deg,var(--plum-d),var(--plum-dd));border-radius:20px;padding:46px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.about-visual h3{font-size:32px;margin-bottom:14px}
+.about-visual .quote{font-family:'Playfair Display';font-style:italic;font-size:22px;opacity:.97;border-left:3px solid var(--gold);padding-left:18px;margin:22px 0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:8px 14px;border-radius:999px;font-weight:700;font-size:13px}
+.about-txt h2{font-size:clamp(30px,4.2vw,46px);color:var(--plum-dd);margin-bottom:16px}
+.about-txt p{color:var(--muted);margin-bottom:16px;font-size:16px}
+.feat{display:flex;gap:14px;margin-bottom:16px}
+.feat .fic{flex:0 0 44px;height:44px;border-radius:10px;background:var(--blush);display:grid;place-items:center;color:var(--plum);font-weight:800}
+.feat b{display:block;color:var(--ink)}
+.feat span{color:var(--muted);font-size:14px}
+
+.reviews{background:linear-gradient(180deg,#fff,var(--cream))}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.rev-grid{grid-template-columns:1fr}}
+.rev-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 12px 32px -24px rgba(52,20,41,.4)}
+.rev-card .stars{font-size:17px;margin-bottom:12px}
+.rev-card p{font-size:15px;color:var(--ink);margin-bottom:18px}
+.rev-card .who{display:flex;align-items:center;gap:12px}
+.rev-card .av{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--plum),var(--mauve));display:grid;place-items:center;color:#fff;font-weight:800}
+.rev-card .who b{font-size:15px}
+.rev-card .who span{font-size:12px;color:var(--muted)}
+.rev-summary{text-align:center;margin-bottom:42px}
+.rev-summary .big{font-family:'Playfair Display';font-size:64px;color:var(--plum-dd);line-height:1}
+.rev-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.rev-tags .t{background:#fff;border:1px solid var(--line);color:var(--plum);font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px}
+
+.book{background:linear-gradient(150deg,var(--plum-dd),var(--plum-d));color:#f4dcee;position:relative;overflow:hidden}
+.book .wrap{position:relative;z-index:2}
+.book-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+@media(max-width:900px){.book-grid{grid-template-columns:1fr}}
+.book-left h2{font-size:clamp(32px,4.6vw,50px);color:#fff;margin-bottom:16px}
+.book-left h2 em{font-style:italic;color:#f4cf9c}
+.book-left p{opacity:.88;margin-bottom:26px;font-size:16px}
+.book-info{display:flex;flex-direction:column;gap:16px}
+.book-info .row{display:flex;gap:14px;align-items:center}
+.book-info .ic{width:46px;height:46px;border-radius:11px;background:rgba(255,255,255,.12);display:grid;place-items:center;flex:0 0 46px}
+.book-info b{display:block;color:#fff}
+.book-info span{opacity:.84;font-size:14px}
+.form{background:#fff;border-radius:20px;padding:34px;color:var(--ink);box-shadow:var(--shadow)}
+.form h3{color:var(--plum-dd);font-size:26px;margin-bottom:6px}
+.form .sub{color:var(--muted);font-size:14px;margin-bottom:22px}
+.fg{margin-bottom:16px}
+.fg label{display:block;font-weight:700;font-size:13px;margin-bottom:7px}
+.fg input,.fg select,.fg textarea{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:inherit;font-size:15px;background:var(--cream);transition:.2s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:0;border-color:var(--plum);background:#fff;box-shadow:0 0 0 4px rgba(106,44,90,.12)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:520px){.frow{grid-template-columns:1fr}}
+.form .btn{width:100%;justify-content:center;margin-top:8px}
+.form .err{color:#dc2626;font-size:12px;font-weight:700;margin-top:5px;display:none}
+.confirm{display:none;text-align:center;padding:12px 0}
+.confirm .check{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--plum),var(--gold));display:grid;place-items:center;margin:0 auto 18px;color:#fff;font-size:40px;animation:pop .5s cubic-bezier(.2,1.4,.4,1)}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+.confirm h3{color:var(--plum-dd);font-size:26px;margin-bottom:10px}
+.confirm .summary{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:left;font-size:14px;margin:16px 0}
+.confirm .summary div{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px dashed var(--line)}
+.confirm .summary div:last-child{border:0}
+.confirm .summary span:first-child{color:var(--muted);font-weight:600}
+.confirm .summary span:last-child{font-weight:700;text-align:right}
+
+footer{background:#241019;color:#c9a3ba;padding:60px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+@media(max-width:900px){.foot-grid{grid-template-columns:1fr}}
+footer h4{color:#fff;font-family:'Outfit';font-weight:800;margin-bottom:16px;font-size:14px}
+footer a,footer p{color:#bd94ac;font-size:14px;display:block;margin-bottom:9px;transition:.2s}
+footer a:hover{color:#fff}
+.foot-logo{display:flex;align-items:center;gap:11px;font-family:'Playfair Display';font-weight:700;font-size:21px;color:#fff;margin-bottom:14px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;text-align:center;font-size:13px;color:#9a7389}
+
+.chat-fab{position:fixed;bottom:24px;right:24px;z-index:90;width:64px;height:64px;border-radius:50%;border:0;cursor:pointer;background:linear-gradient(135deg,var(--plum),var(--plum-d));box-shadow:0 16px 34px -10px rgba(106,44,90,.7);display:grid;place-items:center;transition:.3s;animation:pulse 2.6s infinite}
+.chat-fab:hover{transform:scale(1.08)}
+@keyframes pulse{0%{box-shadow:0 16px 34px -10px rgba(106,44,90,.7),0 0 0 0 rgba(106,44,90,.45)}70%{box-shadow:0 16px 34px -10px rgba(106,44,90,.7),0 0 0 16px rgba(106,44,90,0)}100%{box-shadow:0 16px 34px -10px rgba(106,44,90,.7),0 0 0 0 rgba(106,44,90,0)}}
+.chat-panel{position:fixed;bottom:100px;right:24px;z-index:91;width:380px;max-width:calc(100vw - 40px);height:560px;max-height:calc(100vh - 140px);background:#fff;border-radius:20px;box-shadow:0 30px 70px -20px rgba(52,20,41,.5);display:flex;flex-direction:column;overflow:hidden;transform:translateY(20px) scale(.96);opacity:0;pointer-events:none;transition:.3s}
+.chat-panel.open{transform:none;opacity:1;pointer-events:auto}
+.chat-head{background:linear-gradient(135deg,var(--plum-d),var(--plum));color:#fff;padding:18px 20px;display:flex;align-items:center;gap:12px}
+.chat-head .av{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;font-size:22px;position:relative}
+.chat-head .av::after{content:"";position:absolute;bottom:1px;right:1px;width:11px;height:11px;border-radius:50%;background:#4ade80;border:2px solid var(--plum-d)}
+.chat-head b{font-size:16px}
+.chat-head span{font-size:12px;opacity:.85}
+.chat-head .x{margin-left:auto;background:rgba(255,255,255,.15);border:0;color:#fff;width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:18px}
+.chat-body{flex:1;overflow-y:auto;padding:18px;background:var(--cream);display:flex;flex-direction:column;gap:12px}
+.msg{max-width:82%;padding:11px 15px;border-radius:16px;font-size:14px;line-height:1.5;animation:msgin .3s ease}
+@keyframes msgin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.msg.bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:5px;align-self:flex-start;box-shadow:0 4px 12px -8px rgba(52,20,41,.3)}
+.msg.user{background:linear-gradient(135deg,var(--plum),var(--plum-d));color:#fff;border-bottom-right-radius:5px;align-self:flex-end}
+.msg.bot b{color:var(--plum)}.msg.bot a{color:var(--plum);font-weight:800}
+.quick{display:flex;flex-wrap:wrap;gap:8px;padding:0 18px 12px;background:var(--cream)}
+.quick button{background:#fff;border:1.5px solid var(--line);color:var(--plum);font-weight:700;font-size:12.5px;padding:8px 13px;border-radius:999px;cursor:pointer;transition:.2s;font-family:inherit}
+.quick button:hover{background:var(--plum);color:#fff;border-color:var(--plum)}
+.chat-input{display:flex;gap:8px;padding:14px;border-top:1px solid var(--line);background:#fff}
+.chat-input input{flex:1;padding:12px 15px;border:1.5px solid var(--line);border-radius:999px;font-family:inherit;font-size:14px}
+.chat-input input:focus{outline:0;border-color:var(--plum)}
+.chat-input button{width:44px;height:44px;border-radius:50%;border:0;background:linear-gradient(135deg,var(--plum),var(--plum-d));color:#fff;cursor:pointer;display:grid;place-items:center;flex:0 0 44px}
+.typing{display:flex;gap:4px;padding:14px 16px}
+.typing span{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:blink 1.2s infinite}
+.typing span:nth-child(2){animation-delay:.2s}.typing span:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,60%,100%{opacity:.3}30%{opacity:1}}
+
+.reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#top">
+        <span class="mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M4 20h16M7 20V9l5-5 5 5v11"/><path d="M9 20v-6h6v6"/></svg></span>
+        <span>Dolmen<small>Decorating</small></span>
+      </a>
+      <div class="navlinks">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#book">Get a Quote</a>
+      </div>
+      <div class="nav-cta">
+        <a href="tel:+353851430515" class="btn btn-ghost">📞 085 143 0515</a>
+        <a href="#book" class="btn btn-primary">Free Quote</a>
+      </div>
+      <button class="menu-btn" onclick="document.querySelector('.navlinks').style.display=(this._o?'none':'flex');this._o=!this._o;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4e2043" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="blob" style="width:120px;height:120px;top:14%;left:6%;background:var(--mauve)"></div>
+  <div class="blob" style="width:70px;height:70px;top:62%;left:13%;background:var(--gold);animation-delay:1.4s"></div>
+  <div class="blob" style="width:90px;height:90px;top:20%;right:8%;background:var(--plum);animation-delay:.7s"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Professional Painter &amp; Decorator · Ireland</div>
+        <h1>A fresh coat.<br>A <em>flawless</em> finish.</h1>
+        <p class="lead">Dolmen Decorating is Martin's craft — professional interior &amp; exterior painting and decorating, with expert colour advice and a famously neat, tidy finish.</p>
+        <div class="swatch">
+          <span style="background:#6a2c5a"></span><span style="background:#a05589"></span><span style="background:#d99a3e"></span><span style="background:#3f6b3a"></span><span style="background:#2563eb"></span><span style="background:#e8ded2"></span>
+        </div>
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-primary">🎨 Get My Free Quote</a>
+          <a href="#services" class="btn btn-ghost">See Services</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="n">5.0 ★</div><div class="l">Perfect Google Rating</div></div>
+          <div><div class="n">Neat</div><div class="l">&amp; tidy, guaranteed</div></div>
+          <div><div class="n">Expert</div><div class="l">Colour advice</div></div>
+        </div>
+      </div>
+      <div style="position:relative">
+        <div class="hero-card">
+          <div class="photo"><div class="cta-emoji">🎨</div><div class="stroke"></div></div>
+          <div class="cap">
+            <div><div class="who">Dolmen Decorating</div><div class="rev">Painter &amp; decorator · Ireland</div></div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="badge-float b1"><span class="ic">🖌️</span> Neat &amp; tidy finish</div>
+          <div class="badge-float b2"><span class="ic">🎨</span> Expert colour advice</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="trust-track">
+    <span>🎨 Interior &amp; Exterior Painting</span><span>🖼️ Wallpapering &amp; Decorating</span><span>🖌️ Specialist Finishes</span><span>💬 Expert Colour Advice</span><span>✨ Neat &amp; Tidy</span><span>⭐ Perfect 5.0 Rating</span><span>📍 Ireland</span>
+    <span>🎨 Interior &amp; Exterior Painting</span><span>🖼️ Wallpapering &amp; Decorating</span><span>🖌️ Specialist Finishes</span><span>💬 Expert Colour Advice</span><span>✨ Neat &amp; Tidy</span><span>⭐ Perfect 5.0 Rating</span><span>📍 Ireland</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">Our Services</div>
+      <h2>Painting &amp; decorating, done properly</h2>
+      <p>From a single feature wall to a whole-home refresh — carried out with care, cleanliness and craft.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><span class="tag">Popular</span><div class="ic">🎨</div><h3>Interior Painting</h3><p>Walls, ceilings, hallways, stairs and landings transformed — clean lines and a flawless finish.</p><div class="price">from €200 <small>/ room</small></div></div>
+      <div class="svc reveal"><div class="ic">🏠</div><h3>Exterior Painting</h3><p>Render, doors, windows and facades refreshed and protected against the Irish weather.</p><div class="price">quote <small>on site</small></div></div>
+      <div class="svc reveal"><div class="ic">🖼️</div><h3>Wallpapering</h3><p>Feature walls and full rooms hung with precision — patterns matched, edges perfect.</p><div class="price">from €180 <small>/ wall</small></div></div>
+      <div class="svc reveal"><span class="tag">Specialist</span><div class="ic">🪵</div><h3>Wood &amp; Specialist Finishes</h3><p>Log cabins, decking, doors and trim stained or painted with the right product for the job.</p><div class="price">custom <small>quote</small></div></div>
+      <div class="svc reveal"><div class="ic">💬</div><h3>Colour Consultation</h3><p>Not sure on shades? Get expert recommendations that give a better result than you imagined.</p><div class="price">free <small>with quote</small></div></div>
+      <div class="svc reveal"><div class="ic">🏢</div><h3>Commercial Decorating</h3><p>Offices, shops and rental properties painted to a high standard, on a schedule that suits.</p><div class="price">contract <small>rates</small></div></div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:13px;margin-top:24px">Sample starting prices for this demo — final quotes depend on the space &amp; scope. Ask for a free assessment.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="background:linear-gradient(180deg,var(--cream),#fff)">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-visual reveal">
+        <h3>Meet Martin 🖌️</h3>
+        <p style="opacity:.9">The craftsman behind Dolmen Decorating — professional, trustworthy, and known for going the extra mile to get the finish just right.</p>
+        <div class="quote">"A gentleman to deal with, professional and so trustworthy. Your recommendations gave me a better result than I could have imagined."</div>
+        <div class="chips">
+          <span class="chip">⭐ 5.0 Rated</span>
+          <span class="chip">💬 Great Advice</span>
+          <span class="chip">✨ Neat &amp; Tidy</span>
+          <span class="chip">🤝 Trustworthy</span>
+        </div>
+      </div>
+      <div class="about-txt reveal">
+        <h2>Craft, care &amp; a clean finish</h2>
+        <p>Dolmen Decorating is built on Martin's professionalism. He'll research the right product for the job, give honest colour advice, and leave your home as tidy as he found it — the little things that turn a paint job into a transformation.</p>
+        <div class="feat"><div class="fic">✓</div><div><b>Goes above and beyond</b><span>Researches the right paint for every surface — even the unusual ones.</span></div></div>
+        <div class="feat"><div class="fic">✓</div><div><b>Neat &amp; tidy</b><span>"Extremely neat and tidy and a pleasure to work with" — every job.</span></div></div>
+        <div class="feat"><div class="fic">✓</div><div><b>Honest advice</b><span>Recommendations that give a better result than you imagined.</span></div></div>
+        <a href="#book" class="btn btn-gold" style="margin-top:8px">Get My Free Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="reviews">
+  <div class="wrap">
+    <div class="rev-summary reveal">
+      <div class="big">5.0</div>
+      <div class="stars" style="font-size:26px">★★★★★</div>
+      <p style="color:var(--muted)">A perfect score across 8 Google reviews</p>
+      <div class="rev-tags"><span class="t">💬 advice</span><span class="t">⏱️ punctuality</span><span class="t">✨ cleanliness</span></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Martin was extremely professional when he came to do my log cabin. He'd never done one before but went above and beyond — researching what paint to use, asking reps and paint shops to get it right."</p>
+        <div class="who"><div class="av">G</div><div><b>Glenn Nolan</b><span>Local Guide · Google</span></div></div>
+      </div>
+      <div class="rev-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Can't thank you enough for the beautiful transformation of my hall, stairs and landing. Your recommendations gave me a better result than I could have imagined. A gentleman to deal with — professional and so trustworthy."</p>
+        <div class="who"><div class="av">M</div><div><b>Mabel B</b><span>Google Review</span></div></div>
+      </div>
+      <div class="rev-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Top class painter, extremely neat and tidy and a pleasure to work with."</p>
+        <div class="who"><div class="av">J</div><div><b>James Redmond</b><span>Google Review · 📷 1 photo</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="book" class="book">
+  <div class="wrap">
+    <div class="book-grid">
+      <div class="book-left reveal">
+        <h2>Get your <em>free quote</em></h2>
+        <p>Tell us about your painting or decorating project and we'll come back with a fair, no-obligation quote.</p>
+        <div class="book-info">
+          <div class="row"><div class="ic">📞</div><div><b>Call</b><span>+353 85 143 0515</span></div></div>
+          <div class="row"><div class="ic">📍</div><div><b>Service area</b><span>Local &amp; surrounding — Ireland</span></div></div>
+          <div class="row"><div class="ic">🕘</div><div><b>Hours</b><span>Open from 7:00 AM · early starts</span></div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="form">
+          <form id="bookForm" novalidate>
+            <h3>Request a Free Quote</h3>
+            <div class="sub">Share the details and we'll be in touch with a price.</div>
+            <div class="frow">
+              <div class="fg"><label>Full Name*</label><input id="f_name" placeholder="John Murphy"><div class="err" id="e_name">Please enter your name</div></div>
+              <div class="fg"><label>Phone*</label><input id="f_phone" placeholder="085 123 4567"><div class="err" id="e_phone">Please enter a valid phone</div></div>
+            </div>
+            <div class="fg"><label>Email</label><input id="f_email" placeholder="you@email.com"></div>
+            <div class="frow">
+              <div class="fg"><label>Service*</label>
+                <select id="f_service"><option value="">Choose a service…</option><option>Interior Painting</option><option>Exterior Painting</option><option>Wallpapering</option><option>Wood / Specialist Finish</option><option>Colour Consultation</option><option>Commercial Decorating</option></select>
+                <div class="err" id="e_service">Please choose a service</div>
+              </div>
+              <div class="fg"><label>Project Size</label><select id="f_freq"><option>1 room</option><option>2–3 rooms</option><option>Whole home</option><option>Exterior / other</option></select></div>
+            </div>
+            <div class="fg"><label>Preferred Date</label><input type="date" id="f_date"></div>
+            <div class="fg"><label>Project details</label><textarea id="f_notes" rows="2" placeholder="Rooms, surfaces, colours in mind, etc."></textarea></div>
+            <button type="submit" class="btn btn-primary">Send My Request →</button>
+          </form>
+          <div class="confirm" id="confirm">
+            <div class="check">✓</div>
+            <h3>Thanks, <span id="c_name">there</span>!</h3>
+            <p style="color:var(--muted)">Your request is in. Here's what you asked for — we'll be in touch with a quote shortly.</p>
+            <div class="summary" id="c_summary"></div>
+            <p style="font-size:13px;color:var(--muted)">Prefer to talk now? Call <b>085 143 0515</b>.</p>
+            <button class="btn btn-ghost" onclick="resetForm()" style="margin-top:6px">Send Another</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><span class="mark" style="width:38px;height:38px;border-radius:9px;background:linear-gradient(135deg,var(--plum),var(--mauve));display:grid;place-items:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M4 20h16M7 20V9l5-5 5 5v11"/><path d="M9 20v-6h6v6"/></svg></span> Dolmen Decorating</div>
+        <p>Professional painting &amp; decorating by Martin, proudly serving Ireland. A fresh coat, a flawless finish — and always neat and tidy.</p>
+        <p>⭐ Perfect 5.0 on Google</p>
+      </div>
+      <div><h4>SERVICES</h4><a href="#services">Interior Painting</a><a href="#services">Exterior Painting</a><a href="#services">Wallpapering</a><a href="#book">Get a Quote</a></div>
+      <div><h4>GET IN TOUCH</h4><a href="tel:+353851430515">📞 +353 85 143 0515</a><p>📍 Local &amp; surrounding — Ireland</p><p>🕘 Open from 7:00 AM</p></div>
+    </div>
+    <div class="foot-bottom">© <span id="yr"></span> Dolmen Decorating · Ireland · Website demo crafted with care.</div>
+  </div>
+</footer>
+
+<!-- CHAT -->
+<button class="chat-fab" id="chatFab" aria-label="Open chat">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.9 8.4 8.5 8.5 0 0 1-3.6-.8L3 21l1.9-5.5A8.38 8.38 0 0 1 21 11.5z"/></svg>
+</button>
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head">
+    <div class="av">🎨</div>
+    <div><b>Ruby</b><br><span>Dolmen Decorating assistant · online</span></div>
+    <button class="x" id="chatClose">×</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="quick" id="quickReplies">
+    <button data-q="What services do you offer?">Services</button>
+    <button data-q="How much does painting a room cost?">Pricing</button>
+    <button data-q="Do you give colour advice?">Colour advice</button>
+    <button data-q="What are your hours?">Hours</button>
+    <button data-q="I want a quote">Get a quote</button>
+  </div>
+  <div class="chat-input">
+    <input id="chatInput" placeholder="Type your message…" autocomplete="off">
+    <button id="chatSend" aria-label="Send"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+  </div>
+</div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+addEventListener('scroll',()=>document.querySelector('header').classList.toggle('scrolled',scrollY>20));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const d=document.getElementById('f_date'); if(d)d.min=new Date().toISOString().split('T')[0];
+
+const form=document.getElementById('bookForm');
+function fail(id,c){document.getElementById(id).style.display=c?'block':'none';return c;}
+form.addEventListener('submit',ev=>{
+  ev.preventDefault();
+  const name=f_name.value.trim(),phone=f_phone.value.trim(),service=f_service.value;let bad=false;
+  bad=fail('e_name',!name)||bad;bad=fail('e_phone',phone.replace(/\D/g,'').length<7)||bad;bad=fail('e_service',!service)||bad;
+  if(bad)return;
+  const rows={'Name':name,'Phone':phone,'Email':f_email.value.trim()||'—','Service':service,'Project':f_freq.value,'Date':f_date.value||'Flexible'};
+  let h='';for(const k in rows)h+=`<div><span>${k}</span><span>${rows[k]}</span></div>`;
+  c_summary.innerHTML=h;c_name.textContent=name.split(' ')[0];
+  form.style.display='none';document.getElementById('confirm').style.display='block';
+});
+function resetForm(){form.reset();form.style.display='block';document.getElementById('confirm').style.display='none';}
+
+const fab=document.getElementById('chatFab'),panel=document.getElementById('chatPanel'),body=document.getElementById('chatBody'),input=document.getElementById('chatInput');
+let greeted=false;
+function openChat(){panel.classList.add('open');fab.style.display='none';if(!greeted){greeted=true;botSay("Hi! 🎨 I'm <b>Ruby</b>, the Dolmen Decorating assistant. I can help with painting, wallpapering, colour advice or a quote. How can I help?");}input.focus();}
+function closeChat(){panel.classList.remove('open');fab.style.display='grid';}
+fab.onclick=openChat;document.getElementById('chatClose').onclick=closeChat;
+function addMsg(t,w){const m=document.createElement('div');m.className='msg '+w;m.innerHTML=t;body.appendChild(m);body.scrollTop=body.scrollHeight;}
+function userSay(t){addMsg(t,'user');}function botSay(t){addMsg(t,'bot');}
+function botTyping(cb){const t=document.createElement('div');t.className='msg bot typing';t.innerHTML='<span></span><span></span><span></span>';body.appendChild(t);body.scrollTop=body.scrollHeight;setTimeout(()=>{t.remove();cb();},650+Math.random()*450);}
+const KB=[
+ {k:['service','offer','do you','types','what do'],a:"We offer 🎨 <b>Interior painting</b>, 🏠 <b>exterior painting</b>, 🖼️ <b>wallpapering</b>, 🪵 <b>wood &amp; specialist finishes</b>, 💬 <b>colour consultation</b> and 🏢 <b>commercial decorating</b>. Want a free quote?"},
+ {k:['price','cost','much','rate','quote','fee','€','euro','room'],a:"Sample starting prices: interior painting from <b>€200/room</b>, wallpapering from <b>€180/wall</b>. Exterior &amp; specialist work is quoted on site. Colour advice is <b>free with a quote</b>! 💬"},
+ {k:['colour','color','advice','shade','recommend','which paint','consult'],a:"Absolutely — <b>expert colour advice is one of Martin's specialties</b> 💬. Customers say his recommendations gave a better result than they imagined. It's free with your quote!"},
+ {k:['wallpaper','paper','feature wall'],a:"Yes, we do <b>wallpapering</b> 🖼️ — feature walls or full rooms, patterns matched and edges perfect. From €180 per wall depending on the paper."},
+ {k:['exterior','outside','render','facade','door','window'],a:"Yes — <b>exterior painting</b> 🏠 for render, doors, windows and facades, protected against the Irish weather. Quoted on site."},
+ {k:['wood','log cabin','cabin','stain','decking','specialist','trim'],a:"Definitely — we do <b>wood &amp; specialist finishes</b> 🪵 including log cabins, decking and trim, always using the right product for the surface. Want a quote?"},
+ {k:['hour','open','time','when','close','schedule','early'],a:"We're open <b>from 7:00 AM</b> 🕘 — early starts are no problem. Give us a call!"},
+ {k:['book','quote','appointment','get started','request','arrange'],a:"Great! 🎉 Fastest way is our quick form — <a href='#book' onclick='closeChat()'>tap here for a free quote</a> — or call <b>085 143 0515</b>."},
+ {k:['neat','tidy','clean','mess','dust'],a:"You're in good hands — we're known for being <b>extremely neat and tidy</b> ✨, leaving your home as clean as we found it."},
+ {k:['where','location','address','area','ireland','serve'],a:"We serve local and surrounding areas across <b>Ireland</b> 📍 — tell us where you are when you get in touch."},
+ {k:['phone','call','number','contact','reach'],a:"Call us anytime at <b>📞 +353 85 143 0515</b> — happy to help!"},
+ {k:['review','rating','star','good','reputation','trust'],a:"We hold a perfect <b>5.0★ across 8 Google reviews</b> ⭐ — customers highlight great advice, cleanliness and professionalism."},
+ {k:['hi','hello','hey','morning','afternoon'],a:"Hi there! 👋 Looking for painting, wallpapering, colour advice, or a quote?"},
+ {k:['thank','thanks','great','grand','perfect'],a:"You're very welcome! 🎨 Anything else — or shall I set up your free quote?"}
+];
+function reply(t){t=t.toLowerCase();let best=null,s=0;for(const i of KB){let c=0;for(const k of i.k)if(t.includes(k))c++;if(c>s){s=c;best=i;}}botSay(best&&s>0?best.a:"Happy to help! 😊 I can cover <b>painting</b>, <b>wallpapering</b>, <b>colour advice</b>, <b>pricing</b>, <b>hours</b>, or a <b>quote</b>. Or call <b>085 143 0515</b>.");}
+function send(t){t=(t||input.value).trim();if(!t)return;userSay(t);input.value='';botTyping(()=>reply(t));}
+document.getElementById('chatSend').onclick=()=>send();
+input.addEventListener('keydown',e=>{if(e.key==='Enter')send();});
+document.querySelectorAll('#quickReplies button').forEach(b=>b.onclick=()=>send(b.dataset.q));
+</script>
+</body>
+</html>
